@@ -7,6 +7,10 @@ import { generatePostBody, generatePostTitle } from "./utils/generatePost";
 
 const app = express();
 
+app.get("/", (req: Request, res: Response) => {
+  res.send("Yeah... I'm a bot you won't find anything interesting here.").status(200);
+})
+
 app.get("/keep-alive", (req: Request, res: Response) => {
   console.log(new Date().toLocaleString() + " -- Keep alive ping");
   res.sendStatus(200);
