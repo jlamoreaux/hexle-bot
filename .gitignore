@@ -1,0 +1,6 @@
+node_modules
+dist
+.env
+
+# Because being on Atlassian's npm registry
+package-lock.json 

@@ -1,0 +1,43 @@
+{
+  "name": "hexle-reddit-bot",
+  "version": "0.0.1",
+  "description": "A bot to post a daily thread to compare hexle scores",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tsc && npm start",
+    "postinstall": "tsc",
+    "start": "node ./dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "16.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlamoreaux/hexle-bot.git"
+  },
+  "author": "jlmx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jlamoreaux/hexle-bot/issues"
+  },
+  "homepage": "https://github.com/jlamoreaux/hexle-bot#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "node-schedule": "^2.1.0",
+    "snoowrap": "^1.23.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "@types/node": "^18.11.9",
+    "@types/node-schedule": "^2.1.0",
+    "@typescript-eslint/eslint-plugin": "^5.42.0",
+    "eslint": "^8.26.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.4.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "typescript": "^4.8.4"
+  }
+}
